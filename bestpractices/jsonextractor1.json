@@ -1,0 +1,115 @@
+{
+    "from": "2022-06-20T10:18:47.513Z",
+    "structure": {
+        "id": "1b24bd35-9cf7-439d-b1e7-255e0245c1dd",
+        "name": "Level1",
+        "data_type": "COLLECT",
+        "kpi_type": "asset0",
+        "kpi_structure": [
+            {
+                "id": "8cb777d5-2b70-4ae9-8603-ad6a752c1c6c",
+                "name": "Level2",
+                "data_type": "COLLECT",
+                "kpi_type": "asset1",
+                "kpi_structure": [
+                    {
+                        "id": "a82f38e0-5322-4a94-b7ea-bcb32b9ff017",
+                        "name": "Metric1",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "b30beca2-1cc0-4c16-9250-1d7976a425dd",
+                        "name": "Metric2",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "unit/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "b565a860-c378-4bbb-883b-26d119a2a290",
+                        "name": "Metric3",
+                        "data_type": "DURATION",
+                        "kpi_type": "TotalDuration",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "cf1755a4-a973-4dd9-90b8-86d3a8e9c1cc",
+                        "name": "Metric4",
+                        "data_type": "COUNT",
+                        "kpi_type": "Ingress",
+                        "unit": "unit",
+                        "has_history": true
+                    },
+                    {
+                        "id": "0772c18b-ab71-4df1-876e-64db36c586b2",
+                        "name": "Metric5",
+                        "data_type": "INTEGER",
+                        "kpi_type": "TotalValue",
+                        "unit": "unit",
+                        "has_history": true
+                    },
+                    {
+                        "id": "0b9dc39d-805e-4d3e-8cb8-621093b604fd",
+                        "name": "Metric6",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Egress",
+                        "unit": "unit/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "3eb9565b-61c6-474c-a2f5-bc144f92cb94",
+                        "name": "Metric7",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueNumber",
+                        "has_history": true
+                    },
+                    {
+                        "id": "45531f2f-9dfe-4c05-a420-d635949fa6bf",
+                        "name": "Metric8",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsValid",
+                        "unit": "b",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            }
+		]	
+    },
+    "kpi_data": [
+        {
+            "from": "2022-06-20T10:18:47.513Z",
+            "values": {
+                "45531f2f-9dfe-4c05-a420-d635949fa6bf": {},
+                "0b9dc39d-805e-4d3e-8cb8-621093b604fd": {},
+                "cf1755a4-a973-4dd9-90b8-86d3a8e9c1cc": {
+                    "integer_value": 4885
+                },
+                "b30beca2-1cc0-4c16-9250-1d7976a425dd": {
+                    "integer_value": 48
+                },
+                "a82f38e0-5322-4a94-b7ea-bcb32b9ff017": {
+                    "duration_value": "0s"
+                },
+                "3eb9565b-61c6-474c-a2f5-bc144f92cb94": {},
+                "0772c18b-ab71-4df1-876e-64db36c586b2": {
+                    "integer_value": 79
+                },
+                "b565a860-c378-4bbb-883b-26d119a2a290": {
+                    "duration_value": "18806s"
+                }
+            }
+        }
+    ],
+    "metadata": {
+        "timezone": {
+            "location": "Asia/Dubai",
+            "offset": 240
+        },
+        "device_type": "IBEX"
+    }
+}
