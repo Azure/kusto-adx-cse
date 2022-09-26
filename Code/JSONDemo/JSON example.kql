@@ -1,0 +1,95 @@
+// Let's create a fake table called "MyRawJson" with only one column of type "Dynamic"
+// inline with the datatable command we feed it a JSON so we have data to play with
+// This is a sample of the public ip list for Azure cloud services. Each service is 
+// covered by what's known as a "service tag" and each has a set of IP prefixes that 
+// represents the public IPs for that service tag. Since this sample has two nested array 
+// this will be perfect to demo the mv-expand command.
+let MyRawJson = datatable (RawJson:dynamic )
+    [
+        dynamic
+        (
+            {
+    "changeNumber": 200,
+    "cloud": "Public",
+    "values": [
+        {
+            "name": "AzureResourceManager.AustraliaCentral",
+            "id": "AzureResourceManager.AustraliaCentral",
+            "properties": {
+                "changeNumber": 1,
+                "region": "australiacentral",
+                "regionId": 58,
+                "platform": "Azure",
+                "systemService": "AzureResourceManager",
+                "addressPrefixes": [
+                    "20.36.108.48/28",
+                    "20.36.110.0/23",
+                    "20.37.230.0/23",
+                    "2603:1010:304::6c0/122",
+                    "2603:1010:304:402::280/122"
+                ],
+                "networkFeatures": null
+            }
+        },
+        {
+            "name": "AzureResourceManager.AustraliaCentral2",
+            "id": "AzureResourceManager.AustraliaCentral2",
+            "properties": {
+                "changeNumber": 3,
+                "region": "australiacentral2",
+                "regionId": 59,
+                "platform": "Azure",
+                "systemService": "AzureResourceManager",
+                "addressPrefixes": [
+                    "20.36.115.144/28",
+                    "20.36.118.0/23",
+                    "20.36.126.0/23",
+                    "2603:1010:404::6c0/122",
+                    "2603:1010:404:402::280/122"
+                ],
+                "networkFeatures": null
+            }
+        }
+    ]
+}
+        )
+    ];
+MyRawJson
+// extracting the root JSON elements using a first pass of "extend" command. Note that we are strongly typing the data types
+// and we are using simple "Jpath" notation to access the field.
+| extend 
+     ChangeNumber   =   tostring(RawJson.changeNumber)
+    ,Cloud          =   tostring(RawJson.cloud)
+// use mv-expand to explode the "values" array. There are two in the JSON so we should get two rows. 
+// Note we are aliasing this using a "ValuesArray =" command so that we can refer to the new field being generated   
+| mv-expand ValuesArray = RawJson.values
+// Extracting the root elements of each of the array's elements. Note we're strongly typing the datatypes
+| extend 
+     ServiceTagName         = tostring(ValuesArray.name)
+    ,ServiceTagId           = tostring(ValuesArray.id)
+    ,ServiceTagChangeNumber = toint(ValuesArray.properties.changeNumber)
+    ,ServiceTagRegionId     = toint(ValuesArray.properties.regionId)
+    ,ServiceTagRegionName   = tostring(ValuesArray.properties.region)
+    ,ServiceTagService      = tostring(ValuesArray.properties.systemService)
+// Each array element contains yet another array with the associated IP ranges for that service tag. We are going to expand that array.
+// Each array element has 5 address prefix so our row count will go from two to ten. Note that the resulting field called "addressPrefixesArray"
+| mv-expand addressPrefixesArray = ValuesArray.properties.addressPrefixes
+// is a dynamic data type which is going to be problematic down the road if we want to do anything with it. Let's cast it to a string using an extend command
+| extend 
+     AddressPrefix = tostring(addressPrefixesArray)
+// using mv-apply to showcase how we can apply a subquery to the content of an array.
+// here we are looping through all the ip prefixes found in the array and using the 
+// ipv4_is_in_range() to check if the 20.36.108.49 IP is in the range. 
+| mv-apply addressPrefixesArray to typeof(string) on
+        (   
+            extend IsItInRange = ipv4_is_in_range("20.36.108.49",addressPrefixesArray)
+        )
+// cleaning up the script by projecting-away the field we do not need
+| project-away 
+     RawJson
+    ,ValuesArray
+    ,addressPrefixesArray
+
+
+
+

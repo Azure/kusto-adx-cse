@@ -1,0 +1,1 @@
+This small sample KQL script uses an in-memory table with a small JSON extract taken from the ServiceTag download file. The goal is to have a self contained script that lets you explore KQL's JSON specific functions.
