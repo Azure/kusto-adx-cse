@@ -9,7 +9,7 @@ print MySubnet
 | extend Ips = format_ipv4(tolong(IpRange))
 | project    MySubnet   =   print_0 ,Ips
 
-// ===============================================================
+// =================================================================
 // ============== KQL Class-C Subnet Calculator ==================
 // ===============================================================
 // First we define a string that represent a class C subnet using
