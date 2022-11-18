@@ -1,0 +1,60 @@
+let MySubnet = "147.243.0.0/16";
+print MySubnet
+| extend subnetAsInt    =   tolong(parse_ipv4(MySubnet)) ,MaskLength     =   toint(ipv4_netmask_suffix(MySubnet))
+| extend NumOfusableIP  =   pow(2,(32-MaskLength))-2 
+| extend firstIp        =   subnetAsInt + 1
+| extend LastIp         =   tolong((firstIp + NumOfusableIP)-1)
+| extend IpRange        =   range(firstIp,LastIp,1)
+| mv-expand IpRange
+| extend Ips = format_ipv4(tolong(IpRange))
+| project    MySubnet   =   print_0 ,Ips
+
+// =================================================================
+// ============== KQL Class-C Subnet Calculator ==================
+// ===============================================================
+// First we define a string that represent a class C subnet using
+// CIDR notation. In this example we are using a /16 subnet which
+// we would expect to have 65534 usable IP address in it.
+// ===============================================================
+let MySubnet = "147.243.0.0/16";
+// We are using "print()" in lieu of using an actual table for the
+// sake of example
+print MySubnet
+// we are extending two important piece of information, the subnet
+// itself and the subnet mask. We are casting them as long and int
+| extend subnetAsInt    =   tolong(parse_ipv4(MySubnet))
+        ,MaskLength     =   toint(ipv4_netmask_suffix(MySubnet))
+// The size of the subnet is simply a power calculation so we 
+// create a new column to calculate the number of usable IPs
+// Note we are artificially substracting 2 from that number 
+// because we know the first address is the network ID and the 
+// last is the broadcast address 
+| extend NumOfusableIP  =   pow(2,(32-MaskLength))-2 
+// We calculate the first IP address of the range using the INT
+// value of the subnet and adding 1 to it. This ensures we ignore
+// the ".0" address which is the network ID
+| extend firstIp        =   subnetAsInt + 1
+// We calculate the last IP address of the range using the INT
+// value of the first address and adding the subnetsize. We 
+// substract 1 to ignore the ".255" address (broadcast)
+| extend LastIp         =   tolong((firstIp + NumOfusableIP)-1)
+// Now the magic, we use the range () operatot to run a while
+// loop that will start from the first IP, to the last in 
+// increment of 1. This will return an array with all calculated
+// values in it.
+| extend IpRange        =   range(firstIp,LastIp,1)
+// we use the mv-expand command to convert the array in a
+// tabular format where each item of the array becomes a row
+| mv-expand IpRange
+// We then explicitly convert the IP addresses from INT back
+// to strings using the format_ipv4) address. Note we are
+// casting to long because exploding the array does not 
+// assume datat types
+| extend Ips = format_ipv4(tolong(IpRange))
+// We use project to keep only the rows we want.
+| project    MySubnet   =   print_0
+            ,Ips
+
+
+
+

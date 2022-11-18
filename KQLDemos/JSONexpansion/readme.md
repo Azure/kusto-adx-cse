@@ -1,0 +1,1 @@
+This demo starts with a JSON snippet to simulate a dynamic field having a JSON in it. The rest of the script contains comment that explains what we are doing.
