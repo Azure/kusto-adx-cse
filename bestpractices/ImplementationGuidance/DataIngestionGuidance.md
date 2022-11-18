@@ -1,5 +1,28 @@
 # Data Ingestion implementation guidance  
 
+* [Data Ingestion building blocks](#data-ingestion-building-blocks)
+    * [Ingestion types](#ingestion-type)
+    * [Tables](#table)
+    * [Data mappings](#data-mappings)
+    * [Delivery Mechanism](#delivery-mechanism)
+* [Common Ingestion Patters](#common-ingestion-patterns)
+    * [Lambda vs Kappa](#kappa-vs-lamba)
+    * [IoT routed telemetry](#iot-routed-telemetry)
+    * [Flight Recorder](#flight-recorder-pattern)
+    * [Partitionned landing zone approach](#partitionned-landing-zone-approach)
+    * [Dead lettering](#dead-lettering)
+* [Data staging in Data Explorer](#data-staging-in-data-explorer)
+    * [Update policies usage and patterns](#update-policies-usage-and-patterns)
+    * [Handling schema evolution](#handling-schema-evolution)
+* [Ingestion optimization and considerations](#ingestion-optimization-and-considerations)
+    * [File Type and compression](#file-type-and-compression)
+    * [Compression](#compression)
+    * [Cluster size](#cluster-sizes)
+* [Ingestion Monitoring](#ingestion-monitoring)
+    * [Ingestion Insights](#ingestion-insights)
+    * [Ingestion failures](#ingestion-failures)
+    
+
 Ingesting data in data explorer has many components and approaches, this document will list the most common ones and help you decide which is the most appropriate.
 ## Data Ingestion building blocks
 Ingestion is fundamentally composed of four concepts:
@@ -137,7 +160,7 @@ This combination of patterns also applies to an Event hub + Azure function servi
 
 ## Ingestion optimization and considerations
 The following are general guidance to optimize ingestion 
-### File Type and compression
+### File Sizes
 When ingesting large files, be mindful that Data Explorer is a distributed platform. Therefore, ingesting individual very large files will not scale well. 
 
 We recommend a file size around 1 Gigabyte uncompressed as the ideal ingestion files size. This way the engine will have a much more optimized path to distribute the ingestion across the cluster nodes.
