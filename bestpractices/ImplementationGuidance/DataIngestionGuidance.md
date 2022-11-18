@@ -21,7 +21,7 @@
 * [Ingestion Monitoring](#ingestion-monitoring)
     * [Ingestion Insights](#ingestion-insights)
     * [Ingestion failures](#ingestion-failures)
-    
+
 
 Ingesting data in data explorer has many components and approaches, this document will list the most common ones and help you decide which is the most appropriate.
 ## Data Ingestion building blocks
@@ -82,14 +82,22 @@ Think of the following patterns as tools in your toolbox. We recommend you get f
 There are two commonly accepted architecture for big data platforms, Lamba with both a batch and stream layer and Kappa with its streaming layer only.
 ADX is skewed towards the Kappa end of the spectrum. It minimizes the batching times (essentially micro batching) and will favor speed and high throughput. 
 ### IoT routed telemetry
+![Iot Routed Telemetry diagram](/bestpractices/ImplementationGuidance/images/RoutedTelemetry.png)
 The IoT routed telemetry uses IoT hub as a landing area with subsequent built-in routing to direct the data to multiple event hubs. In this scenario, some data element in the IoT data messages allows IoT Hub to route the message to a specialized Event Hub. A classic example is IoT devices sending three types of messages: Telemetry, State and Alerts. Imagine a data element called “MessageType” which can take only one of three states described above. In this scenario, we can instruct IoT hub to route the Telemetry message to a dedicated Event Hub. Thus, we can have ADX ingest that data in a corresponding Telemetry table. This has the obvious advantage of frontloading the routing of data upstream of Data Explorer therefore saving computations. Note the “dead letter” hub which we’ll discuss further down in this section.
 ### Flight recorder pattern
+![Flight Recorder Pattern Diagram](/bestpractices/ImplementationGuidance/images/Flight%20recorder.png)
 This approach is a simplified and generalized version of the use case above. The messaging system such as Event Hub or Kafka is used as a “flight recorder” meaning that no data routing or processing happens in the service themselves and all downstream processing is delegated to the stream processor (Data explorer in this case). Note we also typically see a raw archive of the messages being captured for compliance reasons and forensics in case something fails in the stream processing. 
 Note that the routing is performed using a feature called update policies which we will discuss further down in the data transformation section.
 ### Partitionned landing zone approach
-In this pattern, we use a storage account as a landing zone where files will land to be ingested into ADX. This leverages Data Explorer’s event grid ingestion. Here is a high level workflow of how it works:
- 
-The storage account (aka: the landing zone) is partitioned using folders that represents either tables (ideal use case) or some logical entity. Imagine then a simple storage account with a root folder and two distinct subfolder root\Telemetry and root\Alerts. We can then use ADX event grid ingestion and create two distinct data connections to the same storage account. The difference will be that each data connection will use a filter that will make it so the event trigger will only occur when the container name equals the filter parameters. See here for more details.  
+In this pattern, we use a storage account as a landing zone where files will land to be ingested into ADX. This leverages Data Explorer’s event grid ingestion. Here is a high level workflow of how it works: 
+
+![Event Grid Ingestion](/bestpractices/ImplementationGuidance/images/eventgrid%20ingestion.png) 
+
+The storage account (aka: the landing zone) is partitioned using folders that represents either tables (ideal use case) or some logical entity. Imagine then a simple storage account with a root folder and two distinct subfolder root\Telemetry and root\Alerts. 
+
+![Partitionned Landing Zone Diagram](/bestpractices/ImplementationGuidance/images/Partitionned%20landing%20zones.png)
+
+We can then use ADX event grid ingestion and create two distinct data connections to the same storage account. The difference will be that each data connection will use a filter that will make it so the event trigger will only occur when the container name equals the filter parameters. See here for more details.  
 ### Dead lettering
 This is not a pattern per se but something to consider when building the types of we have been discussing. Dead lettering, simply put, refers to the “else” case in an “if-then” type of scenario. Specifically, when you route data, whether it being upstream from ADX or inside ADX itself, always consider adding a “dead letter queue”. Let’s use the “message type” example from earlier. The system expects only one of three values {Telemetry, State and Alerts} but as we all know, data is seldom this compliant so it’s always safe to have a default route that will send message that have either a null value or an unexpected value to a specific event hub or table (conceptually referred to as the “dead letter queue”). That way you ensure that data is never lost, and unexpected or faulty data can be detected and remediated quickly.
 ## Data staging in Data Explorer
