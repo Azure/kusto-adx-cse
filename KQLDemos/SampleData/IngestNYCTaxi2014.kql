@@ -1,15 +1,15 @@
 
-// ==== RUN ME FIRST == Begin Database object creation script =======
+// ================ Begin Database object creation script =======
 .execute database script <|
 .create table ['trips2']  (['vendorID']:string, ['tpepPickupDateTime']:datetime, ['tpepDropoffDateTime']:datetime, ['passengerCount']:int, ['tripDistance']:real, ['puLocationId']:string, ['doLocationId']:string, ['startLon']:real, ['startLat']:real, ['endLon']:real, ['endLat']:real, ['rateCodeId']:int, ['storeAndFwdFlag']:string, ['paymentType']:string, ['fareAmount']:real, ['extra']:real, ['mtaTax']:real, ['improvementSurcharge']:string, ['tipAmount']:real, ['tollsAmount']:real, ['totalAmount']:real)
 .create table ['trips2'] ingestion parquet mapping 'trips2_mapping' '[{"column":"vendorID", "Properties":{"Path":"$[\'vendorID\']"}},{"column":"tpepPickupDateTime", "Properties":{"Path":"$[\'tpepPickupDateTime\']"}},{"column":"tpepDropoffDateTime", "Properties":{"Path":"$[\'tpepDropoffDateTime\']"}},{"column":"passengerCount", "Properties":{"Path":"$[\'passengerCount\']"}},{"column":"tripDistance", "Properties":{"Path":"$[\'tripDistance\']"}},{"column":"puLocationId", "Properties":{"Path":"$[\'puLocationId\']"}},{"column":"doLocationId", "Properties":{"Path":"$[\'doLocationId\']"}},{"column":"startLon", "Properties":{"Path":"$[\'startLon\']"}},{"column":"startLat", "Properties":{"Path":"$[\'startLat\']"}},{"column":"endLon", "Properties":{"Path":"$[\'endLon\']"}},{"column":"endLat", "Properties":{"Path":"$[\'endLat\']"}},{"column":"rateCodeId", "Properties":{"Path":"$[\'rateCodeId\']"}},{"column":"storeAndFwdFlag", "Properties":{"Path":"$[\'storeAndFwdFlag\']"}},{"column":"paymentType", "Properties":{"Path":"$[\'paymentType\']"}},{"column":"fareAmount", "Properties":{"Path":"$[\'fareAmount\']"}},{"column":"extra", "Properties":{"Path":"$[\'extra\']"}},{"column":"mtaTax", "Properties":{"Path":"$[\'mtaTax\']"}},{"column":"improvementSurcharge", "Properties":{"Path":"$[\'improvementSurcharge\']"}},{"column":"tipAmount", "Properties":{"Path":"$[\'tipAmount\']"}},{"column":"tollsAmount", "Properties":{"Path":"$[\'tollsAmount\']"}},{"column":"totalAmount", "Properties":{"Path":"$[\'totalAmount\']"}}]'
-// ==== RUN ME FIRST == end Database object creation script =========
-
-// ==== RUN ME SECOND  == Begin data ingestion from public blob storage =======
+// ================ End Database object creation script =========
+;
+// =========== Begin data ingestion from public blob storage ==================
 // ** IMPORTANT: (This will run asynchronously and will take a while. =========
 // The script's only output is a set of OperationIds, one per month's =========
 // worth of data files ========================================================
-.execute database script <|
+// ============================================================================
 // month 1
 .ingest async into table ['trips2']  (
  'https://azureopendatastorage.blob.core.windows.net/nyctlc/yellow/puYear%3D2014/puMonth%3D1/part-00001-tid-8898858832658823408-a1de80bd-eed3-4d11-b9d4-fa74bfbd47bc-426336-65.c000.snappy.parquet'
