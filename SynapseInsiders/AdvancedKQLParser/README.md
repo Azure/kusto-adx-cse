@@ -56,7 +56,7 @@ Below is the high level overview of what you will build:
 
 For this challenge, we will ask you to:
 
-1. Ingest the RAW messages using the [sample file here](/SynapseInsiders/SampleData/NmeaSample.csv) using One-click ingestion.
+1. Ingest the RAW messages using the [sample file here](/SynapseInsiders/AdvancedKQLParser/Sample%20Data/output.txt) using One-click ingestion.
 1. Land the data in a landing table called "**nmeaLanding**"
 1. Create a "**f_PreParseNmea()**" function that will apply the variable schema and classify the messages. This function will be used to feed an update policy.
 1. The update policy will feed a destination table called "**NmeaPreParse**"
