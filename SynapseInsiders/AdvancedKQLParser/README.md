@@ -56,7 +56,7 @@ Below is the high level overview of what you will build:
 
 For this challenge, we will ask you to:
 
-1. Ingest the RAW messages using the [sample file here](/SynapseInsiders/SampleData/NmeaSample.csv) using One-click ingestion.
+1. Ingest the RAW messages using the [sample file here](/SynapseInsiders/AdvancedKQLParser/Sample%20Data/output.txt) using One-click ingestion.
 1. Land the data in a landing table called "**nmeaLanding**"
 1. Create a "**f_PreParseNmea()**" function that will apply the variable schema and classify the messages. This function will be used to feed an update policy.
 1. The update policy will feed a destination table called "**NmeaPreParse**"
@@ -86,10 +86,10 @@ For this challenge, we will ask you to:
 Note we are ingesting now only for you to see and explore the RAW data. We will clear the data and re-ingest later so you see how parsing is achieved.
 
 1. Access your data explorer web interface at [https://dataexplorer.azure.com](https://dataexplorer.azure.com) 
-1. Click on data management(in the right hand side blade) and then click "ingest data" ![Ingestion step 0](/SynapseInsiders/AdvancedKQLParser/Imgages/nmeaIngestion0.png)
-1. Make sure to select "use existing table" option and select "nmeaLanding" in the drop down. ![Ingestion step 1](/SynapseInsiders/AdvancedKQLParser/Imgages/nmeaIngestion1.png)
-1. Select "File for the source type and select the sample file that can be found [here](/SynapseInsiders/SampleData/NmeaSample.csv) "![Ingestion Step 2](/SynapseInsiders/AdvancedKQLParser/Imgages/nmeaIngestion2.png)
-1. Finaly, make sure the data format is set to "**TXT**" and hit "**Start Ingestion**"![Ingestion Step 3](/SynapseInsiders/AdvancedKQLParser/Imgages/nmeaIngestion3.png)
+1. Click on data management(in the right hand side blade) and then click "ingest data" ![Ingestion step 0](/SynapseInsiders/AdvancedKQLParser/Images/nmeaIngestion0.png)
+1. Make sure to select "use existing table" option and select "nmeaLanding" in the drop down. ![Ingestion step 1](/SynapseInsiders/AdvancedKQLParser/Images/nmeaIngestion1.png)
+1. Select "File for the source type and select the sample file that can be found [here](/SynapseInsiders/AdvancedKQLParser/Sample%20Data/output.txt) "![Ingestion Step 2](/SynapseInsiders/AdvancedKQLParser/Images/nmeaIngestion2.png)
+1. Finaly, make sure the data format is set to "**TXT**" and hit "**Start Ingestion**"![Ingestion Step 3](/SynapseInsiders/AdvancedKQLParser/Images/nmeaIngestion3.png)
 
 ## Creating the pre-parsing function and destination table
 This is the large function that will pre parse the messages. The code snippet below is heavyly commented and you should be able to follow along.
