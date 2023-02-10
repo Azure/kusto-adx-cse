@@ -11,7 +11,7 @@ This lab will walk you through how to build an advanced parser for a complex var
 
 ## Context
 
-This challenge will involve messages sent by a GPS unit using the NMEA standard. This standard is fairly common for low power IoT devices, commercial and professional GPS units such as those you would find onboard a boat or ground penetrating radar. 
+This challenge will involve messages sent by a GPS unit using the NMEA (National Marine Electronics Association) standard. This standard is fairly common for low power IoT devices, commercial and professional GPS units such as those you would find onboard a boat or ground penetrating radar. 
 
 The standard is relatively difficult to understand in the sense that it is not self describing when it comes to its schema. Each message carries a different schema and represents a specific event. One message might indicate a GPS fix with longitude and latitude data and another might indicate which satellites were "pinged" at a specific moment in time. 
 
