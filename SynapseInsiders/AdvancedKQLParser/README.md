@@ -2,6 +2,21 @@
 
 This lab will walk you through how to build an advanced parser for a complex variable schema file that is based on real life data.
 
+The goal is to go from this: 
+
+```
+$GPGGA,204402.998,4648.004,N,07118.076,W,1,12,1.0,0.0,M,0.0,M,,*70
+$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+$GPRMC,204402.998,A,4648.004,N,07118.076,W,038.9,156.1,300123,000.0,W*66
+$GPGGA,204403.998,4647.993,N,07118.072,W,1,12,1.0,0.0,M,0.0,M,,*7D
+$GPGSA,A,3,01,02,03,04,05,06,07,08,09,10,11,12,1.0,1.0,1.0*30
+$GPRMC,204403.998,A,4647.993,N,07118.072,W,038.9,156.1,300123,000.0,W*6B
+```
+
+to this...
+
+![NMEARoadTrip](/SynapseInsiders/AdvancedKQLParser/Images/NMEARoadTrip.png)
+
 ## Learning objectives
 **In this lab you will:**:
 - :mortar_board: Learn how to chain multiple update policies together to parse variable schemas into different tables with final defined schemas
@@ -48,9 +63,25 @@ Consider the following example:
 | * | Checksum delimiter |
 | last two character | here if you [run an XOR checksum](https://www.scadacore.com/tools/programming-calculators/online-checksum-calculator/) check of the payload (i.e. What is between the **$** and the **\***) or (**GNGGA,001043.00,4404.14036,N,12118.85961,W,1,12,0.98,1113.0,M,-21.3,M**) you will get "**47**" as the hex value.  |
 
+### **Reminder:** How to read KQL code blocks
+
+There will be a lot of code in this lab, it's therefore important to remind everyone how to read code blocks.
+
+- Every line that is separated from the one above by a carriage return is considered in the same code block. This will be made evident by the fact that the line is highlited in light blue in the editor.
+- Every **"let"** command that must be included in a code block will be:
+    - written at the top of the main script
+    - Be separated by a single carriage return from the main script
+    - Have as its last character a semicolon **";"**
+
+
 ## The architecture
 Below is the high level overview of what you will build:
 ![High level architecture](/SynapseInsiders/AdvancedKQLParser/Images/NMEA%20Parser.png)
+
+## The sample data
+
+The sample data used for this training was generated using an NMEA generator where one can simulate a trip. In our case, the data represents a road trip from Quebec City, Canada to Detroit MI.
+The Dataset comprises of only three NMEA sentence types: GGA, RMC and GSA. This lab will demo how to handle the first two types and challenge you to handle the last one.
 
 ## The build
 
@@ -80,16 +111,16 @@ For this challenge, we will ask you to:
     .create table ['nmeaLanding']  (['data']:string) 
     .alter table nmeaLanding  folder "nmea.tables" 
 ```
+### Ingest directly using KQL 
 
-### Use one-click ingestion to load the data and create the table
+This training assumes you already have completed the first two lab of ADX-in-a-day so you should be familliar with how to ingest with one-click ingestion (see next section). 
 
-Note we are ingesting now only for you to see and explore the RAW data. We will clear the data and re-ingest later so you see how parsing is achieved.
+You can also ingest directly from any public URL using a .Ingest command. Note that while fast and efficient, it will not benefit from the built-in reliability features such as retries. It's only recommended in testing or educational scenarios such as this lab.
 
-1. Access your data explorer web interface at [https://dataexplorer.azure.com](https://dataexplorer.azure.com) 
-1. Click on data management(in the right hand side blade) and then click "ingest data" ![Ingestion step 0](/SynapseInsiders/AdvancedKQLParser/Images/nmeaIngestion0.png)
-1. Make sure to select "use existing table" option and select "nmeaLanding" in the drop down. ![Ingestion step 1](/SynapseInsiders/AdvancedKQLParser/Images/nmeaIngestion1.png)
-1. Select "File for the source type and select the sample file that can be found [here](/SynapseInsiders/AdvancedKQLParser/Sample%20Data/output.txt) "![Ingestion Step 2](/SynapseInsiders/AdvancedKQLParser/Images/nmeaIngestion2.png)
-1. Finaly, make sure the data format is set to "**TXT**" and hit "**Start Ingestion**"![Ingestion Step 3](/SynapseInsiders/AdvancedKQLParser/Images/nmeaIngestion3.png)
+Here is the command:
+ ``` Kusto
+ .ingest async into table nmeaLanding  ('https://github.com/Azure/kusto-adx-cse/raw/efd8177c2635520a3908170dd6d6651e8d60825b/SynapseInsiders/AdvancedKQLParser/Sample%20Data/output.txt')  with (format='txt')
+ ```
 
 ## Creating the pre-parsing function and destination table
 This is the large function that will pre parse the messages. The code snippet below is heavyly commented and you should be able to follow along.
