@@ -1,0 +1,67 @@
+﻿// clean up script before the demo to start from scratch
+.execute database script <|
+.clear table nmeaLanding data 
+.clear table nmeaPreParse data 
+.clear table nmeaGGA data 
+.clear table nmeaRMC data 
+.clear table nmeaGSA data 
+
+// reingestion of sample data
+.ingest async into table nmeaLanding  ('https://github.com/Azure/kusto-adx-cse/raw/efd8177c2635520a3908170dd6d6651e8d60825b/SynapseInsiders/AdvancedKQLParser/Sample%20Data/output.txt')  with (format='txt')
+
+// Taking inventory of row counts in our setup
+    (nmeaLanding    | extend SequenceNumber = 1, tableName = 'nmeaLanding'  | summarize count() by tableName, SequenceNumber)
+| union  
+    (nmeaPreParse   | extend SequenceNumber = 2, tableName = 'nmeaPreParse' | summarize count() by tableName, SequenceNumber)
+| union 
+    (nmeaGGA        | extend SequenceNumber = 3, tableName = 'nmeaGGA'      | summarize count() by tableName, SequenceNumber)
+| union 
+    (nmeaRMC        | extend SequenceNumber = 3, tableName = 'nmeaRMC'      | summarize count() by tableName, SequenceNumber)     
+| union 
+    (nmeaGSA        | extend SequenceNumber = 3, tableName = 'nmeaGSA'      | summarize count() by tableName, SequenceNumber)     
+| order by SequenceNumber asc 
+
+// taking a peek at the raw data
+nmeaLanding
+| take 10
+
+// Looking at the preParsed Data
+nmeaPreParse
+| take 10
+
+// Looking at the final parsed table with strongly typed formated data for RMC NMEA messages
+nmeaGGA
+| take 1000
+
+// Showcasing the actual track of the GPS coordinates.
+// note line 44 is a patch for bad data
+nmeaRMC
+| order by FixTime asc
+| project Longitude, Latitude, FixTime
+| where Latitude <= 360 // fixing a bug in the data
+// downsampling the data by getting the max Lat, lon for each 30m time buckets 
+| summarize Longitude = max(Longitude), Latitude = max(Latitude) by bin(FixTime,10m)
+// drawing the track on a map
+| render scatterchart with (kind = map)
+
+// Function that checks if any of the messages have a payload that fails the checksum checks
+// if it returns 0 rows, it's all good :)
+f_validateChecksum
+
+// Code for the checksum validation
+nmeaPreParse
+| extend cs=unicode_codepoints_from_string(MessagePayload)
+| mv-apply cs to typeof(int) on (summarize MyChecksum=binary_all_xor(cs))
+| extend ValidateCs=toupper(tohex(MyChecksum, 2))
+| where Checksum != ValidateCs
+| take 100
+
+// Demonstrating the storage savings
+.show database extents 
+| where TableName contains 'nmea'
+| extend 
+     OriginalSizeMb = format_bytes(OriginalSize,1,'Mb')
+    ,CompressedSizeMb = format_bytes(CompressedSize,1,'Mb')
+| extend CompressionRatio = 1-(CompressedSize/OriginalSize)    
+| project TableName, OriginalSizeMb, CompressedSizeMb, RowCount, CompressionRatio
+
