@@ -1,0 +1,2765 @@
+{
+    "from": "2022-06-20T10:18:47.513Z",
+    "structure": {
+        "id": "1b24bd35-9cf7-439d-b1e7-255e0245c1dd",
+        "name": "T1 Arrival Immigration",
+        "data_type": "COLLECTION",
+        "kpi_type": "place",
+        "kpi_structure": [
+            {
+                "id": "853b350d-c1eb-4ee7-b252-b75092968c6d",
+                "name": "Desk 4 Crew",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "8c4602e2-7b60-4d89-9c35-02aacd280299",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s"
+                    },
+                    {
+                        "id": "ba361c9c-0d06-4646-b7df-8f5f50e14bcb",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s"
+                    },
+                    {
+                        "id": "bc334dd0-fd53-43e1-9791-7af75480d0b8",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX"
+                    },
+                    {
+                        "id": "c1ae5976-5b30-4411-8d0c-a4edfac26c96",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h"
+                    },
+                    {
+                        "id": "079e4d56-46dc-424c-a6a3-795f135598ca",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h"
+                    },
+                    {
+                        "id": "1922584f-b0c5-4e7c-b495-95f6a48cde7c",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX"
+                    }
+                ]
+            },
+            {
+                "id": "8cb777d5-2b70-4ae9-8603-ad6a752c1c6c",
+                "name": "Desk 9 Other Nationalities",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "a82f38e0-5322-4a94-b7ea-bcb32b9ff017",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "b30beca2-1cc0-4c16-9250-1d7976a425dd",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "b565a860-c378-4bbb-883b-26d119a2a290",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "cf1755a4-a973-4dd9-90b8-86d3a8e9c1cc",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "0772c18b-ab71-4df1-876e-64db36c586b2",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "0b9dc39d-805e-4d3e-8cb8-621093b604fd",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "3eb9565b-61c6-474c-a2f5-bc144f92cb94",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "45531f2f-9dfe-4c05-a420-d635949fa6bf",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "8d45a2a4-7074-48a9-831a-b25c94aef0d3",
+                "name": "Desk 7 Other Nationalities",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "9b50fc98-1abf-45e2-a6b3-f5840b15d476",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX"
+                    },
+                    {
+                        "id": "b5e9d42d-824a-4e1a-ad2c-b7ac716110ee",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX"
+                    },
+                    {
+                        "id": "eff52cdd-80e7-4762-a577-5dc1b22e9fcb",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s"
+                    },
+                    {
+                        "id": "249b012d-95bd-48d1-ab03-e1a3c3ea5594",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h"
+                    },
+                    {
+                        "id": "5a66fffd-3e7e-4fdd-9912-1fb21f169f9e",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s"
+                    },
+                    {
+                        "id": "6437320e-9921-455e-a1a6-7874e918d6fa",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h"
+                    }
+                ]
+            },
+            {
+                "id": "8ed29afd-64a3-4124-bae1-312fba4a3149",
+                "name": "Desk 13 Other Nationalities",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "9110ed1d-c329-4cbf-8bd0-3929f9c1c3fc",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "99d23ea3-fd71-4911-85b7-986f603269d3",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "b4c623ce-546b-4e4a-ab90-900958ab8049",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "c807f00b-08ff-47f6-9375-c697d441d39e",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "fc0cfb89-14b4-4a47-bd60-34a18d3dbf67",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "2b409c6b-8537-4476-8324-bf7f57820081",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "2ff35a56-808a-4f22-ac52-e43d64ea670a",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "729a13af-2cc0-4b3a-a92d-8a7b2264c312",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "98b9e8e7-0e95-469f-897c-d91b8250b462",
+                "name": "Desk 1 Poeple of Determination",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "0cab6414-15c7-4e7c-9e19-2163d2bfaf71",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s"
+                    }
+                ]
+            },
+            {
+                "id": "98fbed62-20fb-4d2e-8bc4-e6c77dac75cf",
+                "name": "Desk 2 Special Needs",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "986d6280-6375-4f5e-b9cf-81dffa0a8bcd",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h"
+                    },
+                    {
+                        "id": "cb07fc40-c703-4ec8-927f-f0e5058a531f",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX"
+                    },
+                    {
+                        "id": "13a271d2-7e1d-4bb8-9dd3-cfe06b5362a6",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s"
+                    },
+                    {
+                        "id": "3053603d-8fe8-4897-92f3-dfaa0a65e38d",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX"
+                    },
+                    {
+                        "id": "526af8cf-8174-4e72-bd7e-ccee4c67b809",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h"
+                    },
+                    {
+                        "id": "5c0a5163-28ab-4ba9-844d-e8372a2a36f8",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s"
+                    }
+                ]
+            },
+            {
+                "id": "9eecfeb1-4d47-4148-be55-9480ec5e29ab",
+                "name": "Desk 2 Customs",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "d48c7009-402a-472d-8499-8f84ede2b35a",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "e9abddf7-1abb-4ac0-8dad-2e9a82d10324",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "f6556610-36d6-4e13-9cdb-3bb9f8dccf48",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "077f38b0-3e9e-4216-8cd1-9313932220f4",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "16304d1e-4776-44a9-a57a-69c6aae6aba9",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "23bb7592-b041-4f84-bef0-28ed20c5e852",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "27969c8c-1c02-4285-8553-38c9706bfe66",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "751d55fd-2f9e-4931-8225-806648326f2e",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "ad6fb3be-3cd6-40c8-810e-3a01ee5fe488",
+                "name": "Desk 10 Other Nationalities",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "82b46a19-2ced-45b6-b5b1-cca2d571a405",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "93649ae6-1d37-486e-9418-23af4d0fa464",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "9d14e089-f363-4f57-b56c-ee55ee0b0886",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "b7cfaf26-9794-4075-96a8-247ecf015def",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "0b924ecc-bebe-47da-aefe-bf9ae5329c37",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "114327f8-066b-4090-a568-bac700e93833",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "1745cbdd-e53d-48e3-a726-fa1e17a3874a",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "594e5f5d-b940-46c5-a52e-523cebf1ce05",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "b502cfea-2942-4339-9156-ab87fed19f64",
+                "name": "Desk 1 People of Determination",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "80ef170c-44da-497d-a500-ab1268a56c44",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "b829e00b-d397-408e-a018-6bec9c44517a",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "d53190a8-91a8-4982-b75b-3950b5bd2a1c",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "db3ada69-305b-41a4-8616-84d1ab0d0195",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "ff1036ac-f322-44e7-9482-f316714a64ce",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "05422ff4-4d8f-47ca-af81-9bb7799c4022",
+                        "name": "QueueName",
+                        "data_type": "STRING",
+                        "kpi_type": "QueueName"
+                    },
+                    {
+                        "id": "215bd2f9-b943-40ca-b79f-f8a584646cd2",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "749335db-1ed9-4a3e-bb41-387ae1d1b8d8",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "b53dc170-1a87-45c3-9b5b-f75ad0980925",
+                "name": "Desk 4 Customs",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "8ae11a9b-c022-40a0-bd31-bae3ed9d6f0a",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "953e946c-9550-44b7-b11e-2017ecd494e7",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "ae95bd6b-1a27-41cc-8acc-60d2e2614e63",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "c4f87fb5-f0e2-4e1e-b8aa-e9891bc47c3c",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "205fc231-f1cf-4625-9c68-c760e5400d6c",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "210b0ce6-627f-4bb6-9f05-8316bbf4e932",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "3b6144d6-566b-47fc-b03b-db382c3cecd8",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "7dfdf1ac-baf2-42dc-b6d5-abe5b9637688",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "c234c95c-2a9e-4e84-8ba4-3e5582b2b87b",
+                "name": "Customs",
+                "data_type": "COLLECTION",
+                "kpi_type": "Queue",
+                "kpi_structure": [
+                    {
+                        "id": "ad424f45-2406-4a1b-ae16-d4abf219f3db",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s"
+                    },
+                    {
+                        "id": "ca4fbff6-7830-4df2-b2b0-016a683bddd5",
+                        "name": "OpenLines",
+                        "data_type": "INTEGER",
+                        "kpi_type": "OpenLines",
+                        "has_history": true
+                    },
+                    {
+                        "id": "e6de4c8a-b49e-4906-a5a1-8451bedf4b7e",
+                        "name": "Overflow",
+                        "data_type": "STRING",
+                        "kpi_type": "Overflow"
+                    },
+                    {
+                        "id": "ee5ef4d0-c821-4456-a298-c25d2b3b43e3",
+                        "name": "WaitingTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "WaitingTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "4190b9c9-7d1d-44dd-9256-4fb7a2290055",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "4b6106ae-b009-49d6-9b44-35a534bdbdc5",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "53a7df4f-3d2c-48db-98e7-7223bc114366",
+                        "name": "QueueLength",
+                        "data_type": "FILL_LEVEL",
+                        "kpi_type": "QueueLength",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "7c927d20-ff2c-4e67-b48b-23c581731192",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "7d71c40f-0824-4a22-a385-28224956f919",
+                        "name": "PredictedWaitingTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "PredictedWaitingTime",
+                        "unit": "s",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "c296c5f3-e1a9-40e5-a68a-598396ae225e",
+                "name": "Desk 14 Other Nationalities",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "85d1d873-c96f-4fa4-9b8e-205a92c5ce13",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "8b3f698a-26ab-4cee-bffa-630854d0b3b9",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "9b52e13a-1459-4ae6-97e0-684b4de2178e",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "a067d77a-d60b-4622-92ee-926b6c22a041",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "bb665a0e-7d23-41b0-bcba-914ea44d23b4",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "f7224f50-d1c6-433f-889e-d9f887b16deb",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "0498dcf7-bde1-41e4-9f9b-1340480ba340",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "5b822e77-0f6a-4961-a2bb-b1e6f18bcd0d",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "d280a9f1-b696-4dc7-8e18-81f245de74f8",
+                "name": "Desk 1 Customs",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "df25eb91-2e8e-494b-8d9e-efb49ec78488",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "e5955908-5416-4658-a8f0-e3c95fd76e73",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "f86b4af9-fc29-4099-9938-f7b4ab552527",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "ffc7ced8-4da6-4750-b3e4-906e6fc76a39",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "3998ffbd-10ca-47f1-8674-c5c0a647c3e3",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "47e9b6bb-7ec9-4c23-931a-fe0dcc0f3177",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "4ad79e4e-fadd-45bd-8d0d-943823b3ba6e",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "519fdf3a-38ed-46d9-b845-7f1a9d198c57",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "d636c4c5-79d8-4732-ab4c-7512e156e873",
+                "name": "Desk 6 Golden Class",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "8308b135-a852-4b21-af6e-b56702816722",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "988833c2-5602-411f-8294-908511571cd1",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "9fb1d938-22f4-4e05-8d9e-9ccd163d5c92",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "dcba8684-f476-407c-8262-084a4e8efdac",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "df66663c-0aa2-4699-a8b6-4699a64f65d0",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "f83ede64-abce-49ac-889e-56a53fb40ff3",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "fffc9f2d-3a13-42e1-8411-750afc5d21c6",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "013caa51-06d4-4829-97f8-22dcf2bc4730",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "e49a95ae-43ba-4f80-94b4-bb49e582c9e2",
+                "name": "Desk 4 UAE and GCC",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "87f8fd8a-4cef-4624-8189-166fcd24f301",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "923dfd8a-d215-4b12-b3a7-9dcc8ea8922f",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "9fc7fd58-d718-4043-962e-58f3c51606b6",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "b51e4df7-c314-4e98-bc00-0e2e8628d3f5",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "b52489a5-54fb-419f-b9a5-2288156f1640",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "0f74a91f-7804-4b84-a11d-d305f88e1c86",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "2178bf3b-8302-4af6-8dbc-2186d63e3733",
+                        "name": "QueueName",
+                        "data_type": "STRING",
+                        "kpi_type": "QueueName"
+                    },
+                    {
+                        "id": "605c112c-d17e-4e05-aadc-0b23021417ac",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "f1703983-358e-4cc9-8f36-fdf19d0714f9",
+                "name": "Desk 3 UAE and GCC",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "96384b1b-7f89-4be0-ae80-5d012dbef240",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "bcb8811b-8f04-48e0-8d98-7c7d22815190",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "ca0c2c55-89da-4560-8a04-22c6e791c1ff",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "cd7d7fb9-f2fd-44b4-966a-1bf3dd31e3c8",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "0a47e18a-917f-42cc-8571-32ab55619aa2",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "371b4a15-1787-4124-8d78-540ad00030c2",
+                        "name": "QueueName",
+                        "data_type": "STRING",
+                        "kpi_type": "QueueName"
+                    },
+                    {
+                        "id": "42447574-4d39-4420-836d-22af235da120",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "70132047-af61-46d3-9a9a-1813a84d21a6",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "f45122fb-434d-47a2-83da-2538d528072f",
+                "name": "Desk 16 Cabin Crew",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "a227acc1-c69b-4bda-bd00-5a007a9b9c0a",
+                        "name": "QueueName",
+                        "data_type": "STRING",
+                        "kpi_type": "QueueName"
+                    },
+                    {
+                        "id": "ca074eb3-d50e-4c4d-b48c-f165b80aa0d9",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "e33112f5-774f-492d-8108-5ab864bd060d",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "0d23475a-1b51-444a-ae46-215480654001",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "22358f44-5ad4-4495-b6a8-631854264a17",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "2ba3ebb3-bb34-4a2f-9203-e0e60998a234",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "6f180748-bf11-4f6d-860d-d5cac00b709e",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "6faf8a41-82a4-49a0-b30f-1c436257da31",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "04bbc923-0f6c-44aa-b0e5-015aba4ae6cf",
+                "name": "Desk 5 Fast Track",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "94073a02-5b24-4641-90fc-3dab232a1eca",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "c1fcb33f-1163-4deb-b421-ae08fe2608c9",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "cf7a64c6-1cf4-4fc7-894e-0211ac530ce0",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "eeab35bf-1371-4158-965a-f5613749efbb",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "f852f6f9-8a6c-432a-bc9e-94a03b60a6b6",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "37d8b604-269e-4817-9b55-3280048b8748",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "57649276-043d-4d8c-ba32-cc29bc577f20",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "6e6cd9e3-1a7f-415f-84c0-66387546ac0d",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "0fd82f60-65e7-46ee-9f8d-f471a3735d76",
+                "name": "Desk 15 Other Nationalities",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "8aafaaf2-de7a-4062-84ca-cae4db3d2d22",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "94db52fc-ac39-4f96-bd65-c3a7f91cc794",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "d3e118e8-9f34-4590-936e-c9151f6546c6",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "fa82f3d3-fe31-4ad3-a228-243145727149",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "faaebf42-be71-48ee-b8ce-637c38ae4fcd",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "fe42d043-3785-49f3-a7d1-1664a5b375d2",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "182b7b3e-ccf7-4c5a-abc1-59756986c064",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "46fa1e55-3456-42bb-9032-51ad8636893c",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "1086f2a8-d6cd-4dda-94f8-81c7ebea01f0",
+                "name": "Desk 3 Customs",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "a611907d-bbb2-49dc-8e55-8b29b8d127dd",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "ab32adfd-253e-4191-9955-6f6581185002",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "bd4707f1-f843-4a71-bd86-ca7cdf8a45a7",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "ca5ae303-6241-41f7-a908-98ea17e4e3ce",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "0c326377-15a2-47ab-bb8e-8d8a3f8b3918",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "18ecb48a-1e17-4f79-87c3-4f2333d88df2",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "4afd1d5c-bfa2-4051-838a-71c566bdfc1f",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "60026100-993b-4315-8873-f90b9e1b3b2d",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "1c65412a-b73f-42d8-aba8-1117a7d8d049",
+                "name": "Desk 12 Other Nationalities",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "95aff156-6017-4bc2-ad00-cca79d157e4c",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "a56f19f8-a8c7-4e37-8732-80f539f0b2b2",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "dd87a9d5-3f6d-466a-8610-700eeab86723",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "fa4b8402-9fb7-4781-ba01-1d1fa8672a7e",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "2dbd239f-0d97-4493-a648-813d92d0905c",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "5d42f489-04ea-47c5-81d2-33e1f364e6e7",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "692a242b-c04d-4371-a24d-6970fb5e3dc4",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "74d5bfb3-fd27-47cc-bff0-128916a98f56",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "2920a538-224d-464c-8282-7d0aede58c4a",
+                "name": "Desk 2 GCC",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "89e67720-1a6f-4569-888f-e4080e795589",
+                        "name": "QueueName",
+                        "data_type": "STRING",
+                        "kpi_type": "QueueName"
+                    },
+                    {
+                        "id": "c0c72afc-8015-4660-b518-b3862753d252",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "c31f2c7d-9e6f-4df9-aabb-f01a3b742884",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "cb9d5fda-5c25-4818-a45b-b8bdc9da79ee",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "ffd9a91e-7eab-479a-a4e0-0fea37fa54c7",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "20b4ef7b-ee3c-47a9-bd4f-7ba4295fa455",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "42952417-4c19-46ea-9e5f-e21ae72e07f9",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "4fa369d5-bb2c-453a-b39f-ceb42ca1c62a",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "2fa73fcc-4dc9-4f6a-9f2b-014baff34d6d",
+                "name": "Desk 16 Other Nationalities",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "87bc87ad-a518-4eff-a120-c5b712a7aeb3",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s"
+                    },
+                    {
+                        "id": "99e7340f-2ecf-4f39-af32-cf462acbffc9",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s"
+                    },
+                    {
+                        "id": "a50ee4a4-e95c-4e87-a282-354020a92c2d",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h"
+                    },
+                    {
+                        "id": "bc8c4d69-0155-4a70-8606-8e5d5bd6f06c",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h"
+                    },
+                    {
+                        "id": "e6cd7e35-8012-4518-a361-5fc8e33fe7bd",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX"
+                    },
+                    {
+                        "id": "03ce5109-6d24-406f-80e9-b68caf325682",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX"
+                    }
+                ]
+            },
+            {
+                "id": "2fe27fad-01ea-40d5-93ee-5dc298f7ae8b",
+                "name": "Desk 1 GCC",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "9c3fd6c9-963b-426c-9409-7fb51dbcceb7",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h"
+                    },
+                    {
+                        "id": "be369717-c7be-4c38-8a58-6ec10c524cc0",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h"
+                    },
+                    {
+                        "id": "e9d10ead-a2b2-4621-9c8f-b51a8b25d664",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX"
+                    },
+                    {
+                        "id": "319c8c67-682a-4e94-8dee-a83754186d9b",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s"
+                    },
+                    {
+                        "id": "3ebaad30-49ad-453b-8e38-a5ba4ed78cbb",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX"
+                    },
+                    {
+                        "id": "69dd5441-c34a-4735-943c-120371ba856f",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s"
+                    }
+                ]
+            },
+            {
+                "id": "36ad51bb-e72f-415b-8364-ce8a08b3db23",
+                "name": "Desk 3 GCC",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "bcc5329d-5685-4359-a4d0-ee52148acaf2",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX"
+                    },
+                    {
+                        "id": "c7ac801b-b1a9-4cd4-bc0e-edb4fac6ea30",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h"
+                    },
+                    {
+                        "id": "cde98a28-73f9-48a5-a42a-13fc503d501a",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s"
+                    },
+                    {
+                        "id": "326ca93f-3bd3-426a-8701-769cdef09aa2",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h"
+                    },
+                    {
+                        "id": "7eefafff-5f2e-474c-914a-e1acd4075ed3",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX"
+                    },
+                    {
+                        "id": "7f78bdc2-4d17-4b8a-aa86-cf9cd6d0331d",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s"
+                    }
+                ]
+            },
+            {
+                "id": "39b5f074-8a11-4f6f-8bc5-b5fea1934243",
+                "name": "Desk 8 Other Nationalities",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "ff667642-3688-48ec-aef7-a1a3c5d9ce13",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "04b8f2e2-edc1-4ef4-a860-4615fbf6da86",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "1523e088-9d0f-4293-97fc-ce1353e5710d",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "2315b8c1-08dc-40ba-86ca-baae0c9684e1",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "2b494c2f-9715-43e7-aed5-7231b954c49a",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "2d6d0322-476a-4c75-8c6c-ec1525c7b6bb",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "3215ce34-ba0a-4e31-98d1-3037c6eba25f",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "543152b6-471a-4b4c-aebf-c43613f08bf1",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "49f4969d-2797-4d76-8124-cc15f5de1700",
+                "name": "Fast Track/Golden Class/Diplomatic",
+                "data_type": "COLLECTION",
+                "kpi_type": "Queue",
+                "kpi_structure": [
+                    {
+                        "id": "97094969-3eb1-49b7-9ebb-291a285cee1f",
+                        "name": "QueueLength",
+                        "data_type": "FILL_LEVEL",
+                        "kpi_type": "QueueLength",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "aadc8157-dcf8-4fbc-91a9-bd9447aa33fb",
+                        "name": "OpenLines",
+                        "data_type": "INTEGER",
+                        "kpi_type": "OpenLines",
+                        "has_history": true
+                    },
+                    {
+                        "id": "aef629f4-05a1-491b-ac9c-46b200e21add",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "bcf755ff-de26-46f8-9ceb-a0817d6db89b",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "c225b173-c1ab-46b3-ac15-0aec7d6a18fe",
+                        "name": "WaitingTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "WaitingTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "f560c51a-bd58-46e2-b6b9-44446e2aebf5",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "50413249-27d0-4899-be01-81a0ab919564",
+                        "name": "PredictedWaitingTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "PredictedWaitingTime",
+                        "unit": "s",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "524b6602-3eac-4b90-9198-ced4425bbed9",
+                "name": "E-Gates",
+                "data_type": "COLLECTION",
+                "kpi_type": "Queue",
+                "kpi_structure": [
+                    {
+                        "id": "89a61df0-d58d-4b58-8e0c-0eb77aee72f5",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "8d1300c3-ed82-43a3-acef-f0a3be0e04cb",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s"
+                    },
+                    {
+                        "id": "97ce6137-5149-41c8-84ef-0593f4a2a485",
+                        "name": "PredictedWaitingTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "PredictedWaitingTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "cf8bd47e-9084-451c-8550-4a9dfbe99dd1",
+                        "name": "QueueLength",
+                        "data_type": "FILL_LEVEL",
+                        "kpi_type": "QueueLength",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "eb7a8486-ca76-4328-a7a2-2ca9a3f0fa80",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "fb5298ce-dad4-4df1-b49a-c56d4ee9426f",
+                        "name": "Overflow",
+                        "data_type": "STRING",
+                        "kpi_type": "Overflow"
+                    },
+                    {
+                        "id": "07fe19f4-c10f-4b56-8983-972dbd1c1f2d",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "118c3315-1c1c-417f-87cf-14d589aab7ee",
+                        "name": "OpenLines",
+                        "data_type": "INTEGER",
+                        "kpi_type": "OpenLines",
+                        "has_history": true
+                    },
+                    {
+                        "id": "6d479b1a-02b3-413d-b373-20e13fcf2e3c",
+                        "name": "WaitingTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "WaitingTime",
+                        "unit": "s",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "54bde47d-a5e5-4494-b1ae-987930f1336b",
+                "name": "Desk 7 Diplomat",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "ccdec390-0183-4983-bac7-897899d1da1f",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "f00b6675-2ef4-4de2-8a78-501fcbb221ce",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "11d1fc31-8fa2-4a81-bc4d-32721337c267",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "1a5c00b3-9f08-46e6-bf70-5b50f86cb3af",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "1edf19ff-3502-42cb-b7c5-317bf3a0202a",
+                        "name": "QueueName",
+                        "data_type": "STRING",
+                        "kpi_type": "QueueName"
+                    },
+                    {
+                        "id": "2468e72f-560f-4dbb-b0ff-74b26bfeb826",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "29f97458-4dfb-442d-86a4-d2ce4e9587a9",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "30f89e60-71c6-414d-aa78-6d6586b49866",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "64547059-1e64-44c1-8670-e52490ca99f9",
+                "name": "Other Nationalities",
+                "data_type": "COLLECTION",
+                "kpi_type": "Queue",
+                "kpi_structure": [
+                    {
+                        "id": "ace5745a-2cc6-48cf-b50e-27fff25b9e14",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "215c0322-e062-4617-9bbb-19aff4a829d3",
+                        "name": "WaitingTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "WaitingTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "553fe711-4732-4776-90bf-a5ffe0c51950",
+                        "name": "PredictedWaitingTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "PredictedWaitingTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "5b2fb18f-6b30-4b4a-b166-1ff0379f331b",
+                        "name": "QueueLength",
+                        "data_type": "FILL_LEVEL",
+                        "kpi_type": "QueueLength",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "66b9e98f-de19-4bcf-8fd8-e1c40d6f0910",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "6ec5c463-3116-4b09-8fd5-69e216c36003",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "7c9327b5-affe-455a-8249-a9a5eed51180",
+                        "name": "OpenLines",
+                        "data_type": "INTEGER",
+                        "kpi_type": "OpenLines",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "680eb72e-5769-42ac-a42a-420b260ab757",
+                "name": "E-Gate 11 People of Determination",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "80c9c3a3-ebe5-4864-99d4-e542d589267c",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "87be2343-8abe-4981-83fd-c04f117729e5",
+                        "name": "QueueName",
+                        "data_type": "STRING",
+                        "kpi_type": "QueueName"
+                    },
+                    {
+                        "id": "9334dfc4-4122-48e5-ba7f-2a45f93925a3",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "ac972f08-2bd8-4b73-9c8c-cbfe6b4073a7",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "005a2fde-8668-4fc7-9a02-98f3f57590c6",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "01512575-7d57-4524-aa5a-1c334cd2577b",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "3eeee465-bacc-4d4d-a6e8-49c885b44537",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "4cd0e7cc-3600-4343-a226-f7c473f53467",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "6ab4a416-f3f2-478c-b411-1cc8a61490ad",
+                "name": "Desk 11 Other Nationalities",
+                "data_type": "COLLECTION",
+                "kpi_type": "Desk",
+                "kpi_structure": [
+                    {
+                        "id": "92677622-5d9f-4c03-bc33-25ebef839f1c",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "a4b6aaad-d04a-4a81-bf20-2b579dbca203",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "ca01d266-0287-4b74-8211-2f9e4c8f6423",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "07d363c1-ead3-4a2b-8549-a36a38667735",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "0a9ed15d-92db-43a9-bdaa-e80edeef6d13",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "27a2a560-175c-4a24-be8b-50af924ea898",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "2f88e9fb-b434-44e4-999a-d27a4ff2d789",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "3615642e-ef9e-4c07-a985-4b755aef006f",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "725590f8-1059-452f-82be-be2e44e3eb8d",
+                "name": "UAE/GCC, Special Needs",
+                "data_type": "COLLECTION",
+                "kpi_type": "Queue",
+                "kpi_structure": [
+                    {
+                        "id": "89f11c59-a4ad-46de-b7c0-94480b27056e",
+                        "name": "PredictedWaitingTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "PredictedWaitingTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "8f7fde7f-4a90-41a0-830d-5686f025dd35",
+                        "name": "OpenLines",
+                        "data_type": "INTEGER",
+                        "kpi_type": "OpenLines",
+                        "has_history": true
+                    },
+                    {
+                        "id": "a262fa4c-0e18-4229-985d-3de293b03168",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "ba9b3f78-00ec-4ae3-8c36-a7cd5515fd9d",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "1b85787a-3944-4f80-9c9c-8dbf20572864",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "4f152333-c0df-4a6a-ada4-5e67a0351c79",
+                        "name": "WaitingTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "WaitingTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "5dcc5f5a-5cf3-4c71-a799-c4a081a8de4e",
+                        "name": "QueueLength",
+                        "data_type": "FILL_LEVEL",
+                        "kpi_type": "QueueLength",
+                        "unit": "PAX",
+                        "has_history": true
+                    }
+                ],
+                "has_history": true
+            },
+            {
+                "id": "7f0f2e56-9c72-4f41-acdc-32a1c64db880",
+                "name": "DiagErrorCode",
+                "data_type": "INTEGER",
+                "kpi_type": "DiagErrorCode"
+            },
+            {
+                "id": "18e8033a-69f9-478b-af49-4b3c5efe4ab9",
+                "data_type": "COLLECTION",
+                "kpi_type": "Queue",
+                "kpi_structure": [
+                    {
+                        "id": "c19f63ae-5f22-4eb6-95a5-a3fa4eb2d0b8",
+                        "name": "QueueId",
+                        "data_type": "INTEGER",
+                        "kpi_type": "QueueId",
+                        "has_history": true
+                    },
+                    {
+                        "id": "146b6567-b0e7-4acc-b990-58ac8175740d",
+                        "name": "DayPaxTotal",
+                        "data_type": "INTEGER",
+                        "kpi_type": "DayPaxTotal",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "8e5cf358-6a16-43bd-95c9-ed07999935de",
+                        "name": "Capacity",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Capacity",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "ed1e84b1-efb3-4104-8e76-a43d1066f538",
+                        "name": "ProcessTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "ProcessTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "c9ab8c89-79d8-43ea-ab3b-97f99da36e0a",
+                        "name": "Outflow",
+                        "data_type": "INTEGER",
+                        "kpi_type": "Outflow",
+                        "unit": "PAX/h",
+                        "has_history": true
+                    },
+                    {
+                        "id": "c610398f-3640-40cc-9e2a-30f53160aeee",
+                        "name": "IsOpen",
+                        "data_type": "BOOLEAN",
+                        "kpi_type": "IsOpen",
+                        "unit": "b",
+                        "has_history": true
+                    },
+                    {
+                        "id": "6fc1cfac-32dd-43f6-aa97-cc1d9727d5bd",
+                        "name": "ForwardExits",
+                        "data_type": "COUNT",
+                        "kpi_type": "ForwardExits",
+                        "unit": "PAX",
+                        "has_history": true
+                    },
+                    {
+                        "id": "1a0089e9-a4eb-4b7f-a03c-c964ebfe657d",
+                        "name": "DayOpenTime",
+                        "data_type": "DURATION",
+                        "kpi_type": "DayOpenTime",
+                        "unit": "s",
+                        "has_history": true
+                    },
+                    {
+                        "id": "a036d875-464b-4ec8-a169-224ef517c921",
+                        "name": "OpenLines",
+                        "data_type": "INTEGER",
+                        "kpi_type": "OpenLines",
+                        "dynamic": true
+                    }
+                ],
+                "dynamic": true
+            }
+        ],
+        "has_history": true
+    },
+    "kpi_data": [
+        {
+            "from": "2022-06-20T10:18:47.513Z",
+            "values": {
+                "7c927d20-ff2c-4e67-b48b-23c581731192": {
+                    "integer_value": 7
+                },
+                "53a7df4f-3d2c-48db-98e7-7223bc114366": {},
+                "ee5ef4d0-c821-4456-a298-c25d2b3b43e3": {
+                    "duration_value": "0s"
+                },
+                "7d71c40f-0824-4a22-a385-28224956f919": {
+                    "duration_value": "0s"
+                },
+                "4b6106ae-b009-49d6-9b44-35a534bdbdc5": {},
+                "4190b9c9-7d1d-44dd-9256-4fb7a2290055": {
+                    "integer_value": 500129
+                },
+                "e6de4c8a-b49e-4906-a5a1-8451bedf4b7e": {},
+                "ad424f45-2406-4a1b-ae16-d4abf219f3db": {
+                    "duration_value": "0s"
+                },
+                "ca4fbff6-7830-4df2-b2b0-016a683bddd5": {},
+                "89a61df0-d58d-4b58-8e0c-0eb77aee72f5": {
+                    "integer_value": 4
+                },
+                "cf8bd47e-9084-451c-8550-4a9dfbe99dd1": {},
+                "6d479b1a-02b3-413d-b373-20e13fcf2e3c": {
+                    "duration_value": "0s"
+                },
+                "97ce6137-5149-41c8-84ef-0593f4a2a485": {
+                    "duration_value": "0s"
+                },
+                "eb7a8486-ca76-4328-a7a2-2ca9a3f0fa80": {},
+                "07fe19f4-c10f-4b56-8983-972dbd1c1f2d": {
+                    "integer_value": 300598
+                },
+                "fb5298ce-dad4-4df1-b49a-c56d4ee9426f": {},
+                "8d1300c3-ed82-43a3-acef-f0a3be0e04cb": {
+                    "duration_value": "0s"
+                },
+                "118c3315-1c1c-417f-87cf-14d589aab7ee": {},
+                "bcf755ff-de26-46f8-9ceb-a0817d6db89b": {
+                    "integer_value": 2
+                },
+                "97094969-3eb1-49b7-9ebb-291a285cee1f": {},
+                "c225b173-c1ab-46b3-ac15-0aec7d6a18fe": {
+                    "duration_value": "0s"
+                },
+                "50413249-27d0-4899-be01-81a0ab919564": {
+                    "duration_value": "9s"
+                },
+                "aef629f4-05a1-491b-ac9c-46b200e21add": {},
+                "f560c51a-bd58-46e2-b6b9-44446e2aebf5": {
+                    "integer_value": 195758
+                },
+                "aadc8157-dcf8-4fbc-91a9-bd9447aa33fb": {},
+                "66b9e98f-de19-4bcf-8fd8-e1c40d6f0910": {
+                    "integer_value": 1
+                },
+                "5b2fb18f-6b30-4b4a-b166-1ff0379f331b": {},
+                "215c0322-e062-4617-9bbb-19aff4a829d3": {
+                    "duration_value": "1s"
+                },
+                "553fe711-4732-4776-90bf-a5ffe0c51950": {
+                    "duration_value": "15s"
+                },
+                "6ec5c463-3116-4b09-8fd5-69e216c36003": {
+                    "integer_value": 44
+                },
+                "ace5745a-2cc6-48cf-b50e-27fff25b9e14": {
+                    "integer_value": 250017
+                },
+                "7c9327b5-affe-455a-8249-a9a5eed51180": {},
+                "a262fa4c-0e18-4229-985d-3de293b03168": {
+                    "integer_value": 3
+                },
+                "5dcc5f5a-5cf3-4c71-a799-c4a081a8de4e": {},
+                "4f152333-c0df-4a6a-ada4-5e67a0351c79": {
+                    "duration_value": "0s"
+                },
+                "89f11c59-a4ad-46de-b7c0-94480b27056e": {
+                    "duration_value": "0s"
+                },
+                "1b85787a-3944-4f80-9c9c-8dbf20572864": {
+                    "integer_value": 14
+                },
+                "ba9b3f78-00ec-4ae3-8c36-a7cd5515fd9d": {
+                    "integer_value": 266835
+                },
+                "8f7fde7f-4a90-41a0-830d-5686f025dd35": {
+                    "integer_value": 1
+                },
+                "47e9b6bb-7ec9-4c23-931a-fe0dcc0f3177": {},
+                "e5955908-5416-4658-a8f0-e3c95fd76e73": {},
+                "519fdf3a-38ed-46d9-b845-7f1a9d198c57": {
+                    "integer_value": 22827
+                },
+                "ffc7ced8-4da6-4750-b3e4-906e6fc76a39": {
+                    "integer_value": 252
+                },
+                "3998ffbd-10ca-47f1-8674-c5c0a647c3e3": {
+                    "duration_value": "0s"
+                },
+                "f86b4af9-fc29-4099-9938-f7b4ab552527": {},
+                "4ad79e4e-fadd-45bd-8d0d-943823b3ba6e": {
+                    "integer_value": 585
+                },
+                "df25eb91-2e8e-494b-8d9e-efb49ec78488": {
+                    "duration_value": "14738s"
+                },
+                "215bd2f9-b943-40ca-b79f-f8a584646cd2": {},
+                "d53190a8-91a8-4982-b75b-3950b5bd2a1c": {},
+                "749335db-1ed9-4a3e-bb41-387ae1d1b8d8": {},
+                "ff1036ac-f322-44e7-9482-f316714a64ce": {},
+                "80ef170c-44da-497d-a500-ab1268a56c44": {
+                    "duration_value": "0s"
+                },
+                "b829e00b-d397-408e-a018-6bec9c44517a": {},
+                "db3ada69-305b-41a4-8616-84d1ab0d0195": {
+                    "duration_value": "17746s"
+                },
+                "0cab6414-15c7-4e7c-9e19-2163d2bfaf71": {
+                    "duration_value": "16858s"
+                },
+                "f6556610-36d6-4e13-9cdb-3bb9f8dccf48": {},
+                "23bb7592-b041-4f84-bef0-28ed20c5e852": {},
+                "d48c7009-402a-472d-8499-8f84ede2b35a": {
+                    "integer_value": 17565
+                },
+                "27969c8c-1c02-4285-8553-38c9706bfe66": {
+                    "integer_value": 60
+                },
+                "16304d1e-4776-44a9-a57a-69c6aae6aba9": {
+                    "duration_value": "0s"
+                },
+                "077f38b0-3e9e-4216-8cd1-9313932220f4": {},
+                "751d55fd-2f9e-4931-8225-806648326f2e": {
+                    "integer_value": 381
+                },
+                "e9abddf7-1abb-4ac0-8dad-2e9a82d10324": {
+                    "duration_value": "218s"
+                },
+                "42952417-4c19-46ea-9e5f-e21ae72e07f9": {},
+                "cb9d5fda-5c25-4818-a45b-b8bdc9da79ee": {},
+                "20b4ef7b-ee3c-47a9-bd4f-7ba4295fa455": {
+                    "integer_value": 7451
+                },
+                "c31f2c7d-9e6f-4df9-aabb-f01a3b742884": {
+                    "integer_value": 120
+                },
+                "c0c72afc-8015-4660-b518-b3862753d252": {
+                    "duration_value": "0s"
+                },
+                "4fa369d5-bb2c-453a-b39f-ceb42ca1c62a": {
+                    "integer_value": 168
+                },
+                "ffd9a91e-7eab-479a-a4e0-0fea37fa54c7": {
+                    "duration_value": "7594s"
+                },
+                "60026100-993b-4315-8873-f90b9e1b3b2d": {
+                    "boolean_value": true
+                },
+                "bd4707f1-f843-4a71-bd86-ca7cdf8a45a7": {},
+                "4afd1d5c-bfa2-4051-838a-71c566bdfc1f": {
+                    "integer_value": 4936
+                },
+                "ab32adfd-253e-4191-9955-6f6581185002": {
+                    "integer_value": 60
+                },
+                "ca5ae303-6241-41f7-a908-98ea17e4e3ce": {
+                    "duration_value": "0s"
+                },
+                "18ecb48a-1e17-4f79-87c3-4f2333d88df2": {},
+                "0c326377-15a2-47ab-bb8e-8d8a3f8b3918": {
+                    "integer_value": 136
+                },
+                "a611907d-bbb2-49dc-8e55-8b29b8d127dd": {
+                    "duration_value": "9552s"
+                },
+                "96384b1b-7f89-4be0-ae80-5d012dbef240": {},
+                "70132047-af61-46d3-9a9a-1813a84d21a6": {},
+                "ca0c2c55-89da-4560-8a04-22c6e791c1ff": {
+                    "integer_value": 5391
+                },
+                "0a47e18a-917f-42cc-8571-32ab55619aa2": {
+                    "integer_value": 60
+                },
+                "42447574-4d39-4420-836d-22af235da120": {
+                    "duration_value": "0s"
+                },
+                "bcb8811b-8f04-48e0-8d98-7c7d22815190": {
+                    "integer_value": 175
+                },
+                "cd7d7fb9-f2fd-44b4-966a-1bf3dd31e3c8": {
+                    "duration_value": "5544s"
+                },
+                "210b0ce6-627f-4bb6-9f05-8316bbf4e932": {},
+                "7dfdf1ac-baf2-42dc-b6d5-abe5b9637688": {},
+                "953e946c-9550-44b7-b11e-2017ecd494e7": {
+                    "integer_value": 42623
+                },
+                "3b6144d6-566b-47fc-b03b-db382c3cecd8": {
+                    "integer_value": 552
+                },
+                "205fc231-f1cf-4625-9c68-c760e5400d6c": {
+                    "duration_value": "0s"
+                },
+                "8ae11a9b-c022-40a0-bd31-bae3ed9d6f0a": {},
+                "ae95bd6b-1a27-41cc-8acc-60d2e2614e63": {
+                    "integer_value": 1188
+                },
+                "c4f87fb5-f0e2-4e1e-b8aa-e9891bc47c3c": {
+                    "duration_value": "14506s"
+                },
+                "b52489a5-54fb-419f-b9a5-2288156f1640": {},
+                "0f74a91f-7804-4b84-a11d-d305f88e1c86": {},
+                "605c112c-d17e-4e05-aadc-0b23021417ac": {
+                    "integer_value": 5555
+                },
+                "923dfd8a-d215-4b12-b3a7-9dcc8ea8922f": {
+                    "integer_value": 60
+                },
+                "b51e4df7-c314-4e98-bc00-0e2e8628d3f5": {
+                    "duration_value": "0s"
+                },
+                "9fc7fd58-d718-4043-962e-58f3c51606b6": {
+                    "integer_value": 124
+                },
+                "87f8fd8a-4cef-4624-8189-166fcd24f301": {
+                    "duration_value": "23870s"
+                },
+                "6e6cd9e3-1a7f-415f-84c0-66387546ac0d": {},
+                "c1fcb33f-1163-4deb-b421-ae08fe2608c9": {},
+                "57649276-043d-4d8c-ba32-cc29bc577f20": {
+                    "integer_value": 6807
+                },
+                "94073a02-5b24-4641-90fc-3dab232a1eca": {
+                    "integer_value": 60
+                },
+                "37d8b604-269e-4817-9b55-3280048b8748": {
+                    "duration_value": "0s"
+                },
+                "cf7a64c6-1cf4-4fc7-894e-0211ac530ce0": {},
+                "eeab35bf-1371-4158-965a-f5613749efbb": {
+                    "integer_value": 176
+                },
+                "f852f6f9-8a6c-432a-bc9e-94a03b60a6b6": {
+                    "duration_value": "24986s"
+                },
+                "013caa51-06d4-4829-97f8-22dcf2bc4730": {},
+                "8308b135-a852-4b21-af6e-b56702816722": {},
+                "dcba8684-f476-407c-8262-084a4e8efdac": {
+                    "integer_value": 7152
+                },
+                "fffc9f2d-3a13-42e1-8411-750afc5d21c6": {
+                    "integer_value": 60
+                },
+                "f83ede64-abce-49ac-889e-56a53fb40ff3": {
+                    "duration_value": "0s"
+                },
+                "988833c2-5602-411f-8294-908511571cd1": {},
+                "df66663c-0aa2-4699-a8b6-4699a64f65d0": {
+                    "integer_value": 202
+                },
+                "9fb1d938-22f4-4e05-8d9e-9ccd163d5c92": {
+                    "duration_value": "33812s"
+                },
+                "ccdec390-0183-4983-bac7-897899d1da1f": {},
+                "30f89e60-71c6-414d-aa78-6d6586b49866": {
+                    "integer_value": 12
+                },
+                "29f97458-4dfb-442d-86a4-d2ce4e9587a9": {
+                    "integer_value": 4686
+                },
+                "2468e72f-560f-4dbb-b0ff-74b26bfeb826": {
+                    "integer_value": 60
+                },
+                "1a5c00b3-9f08-46e6-bf70-5b50f86cb3af": {
+                    "duration_value": "1s"
+                },
+                "f00b6675-2ef4-4de2-8a78-501fcbb221ce": {
+                    "integer_value": 148
+                },
+                "11d1fc31-8fa2-4a81-bc4d-32721337c267": {
+                    "duration_value": "25124s"
+                },
+                "2d6d0322-476a-4c75-8c6c-ec1525c7b6bb": {
+                    "boolean_value": true
+                },
+                "2b494c2f-9715-43e7-aed5-7231b954c49a": {
+                    "integer_value": 36
+                },
+                "3215ce34-ba0a-4e31-98d1-3037c6eba25f": {
+                    "integer_value": 10544
+                },
+                "1523e088-9d0f-4293-97fc-ce1353e5710d": {
+                    "integer_value": 72
+                },
+                "2315b8c1-08dc-40ba-86ca-baae0c9684e1": {
+                    "duration_value": "0s"
+                },
+                "ff667642-3688-48ec-aef7-a1a3c5d9ce13": {
+                    "integer_value": 3
+                },
+                "04b8f2e2-edc1-4ef4-a860-4615fbf6da86": {
+                    "integer_value": 219
+                },
+                "543152b6-471a-4b4c-aebf-c43613f08bf1": {
+                    "duration_value": "11206s"
+                },
+                "45531f2f-9dfe-4c05-a420-d635949fa6bf": {},
+                "0b9dc39d-805e-4d3e-8cb8-621093b604fd": {},
+                "cf1755a4-a973-4dd9-90b8-86d3a8e9c1cc": {
+                    "integer_value": 4885
+                },
+                "b30beca2-1cc0-4c16-9250-1d7976a425dd": {
+                    "integer_value": 48
+                },
+                "a82f38e0-5322-4a94-b7ea-bcb32b9ff017": {
+                    "duration_value": "0s"
+                },
+                "3eb9565b-61c6-474c-a2f5-bc144f92cb94": {},
+                "0772c18b-ab71-4df1-876e-64db36c586b2": {
+                    "integer_value": 79
+                },
+                "b565a860-c378-4bbb-883b-26d119a2a290": {
+                    "duration_value": "18806s"
+                },
+                "82b46a19-2ced-45b6-b5b1-cca2d571a405": {
+                    "boolean_value": true
+                },
+                "0b924ecc-bebe-47da-aefe-bf9ae5329c37": {},
+                "9d14e089-f363-4f57-b56c-ee55ee0b0886": {
+                    "integer_value": 5621
+                },
+                "93649ae6-1d37-486e-9418-23af4d0fa464": {
+                    "integer_value": 60
+                },
+                "1745cbdd-e53d-48e3-a726-fa1e17a3874a": {
+                    "duration_value": "0s"
+                },
+                "594e5f5d-b940-46c5-a52e-523cebf1ce05": {},
+                "b7cfaf26-9794-4075-96a8-247ecf015def": {
+                    "integer_value": 55
+                },
+                "114327f8-066b-4090-a568-bac700e93833": {
+                    "duration_value": "13730s"
+                },
+                "ca01d266-0287-4b74-8211-2f9e4c8f6423": {
+                    "boolean_value": true
+                },
+                "92677622-5d9f-4c03-bc33-25ebef839f1c": {},
+                "07d363c1-ead3-4a2b-8549-a36a38667735": {
+                    "integer_value": 103
+                },
+                "0a9ed15d-92db-43a9-bdaa-e80edeef6d13": {
+                    "integer_value": 12
+                },
+                "2f88e9fb-b434-44e4-999a-d27a4ff2d789": {
+                    "duration_value": "0s"
+                },
+                "27a2a560-175c-4a24-be8b-50af924ea898": {},
+                "3615642e-ef9e-4c07-a985-4b755aef006f": {
+                    "integer_value": 4
+                },
+                "a4b6aaad-d04a-4a81-bf20-2b579dbca203": {
+                    "duration_value": "6300s"
+                },
+                "a56f19f8-a8c7-4e37-8732-80f539f0b2b2": {},
+                "74d5bfb3-fd27-47cc-bff0-128916a98f56": {},
+                "2dbd239f-0d97-4493-a648-813d92d0905c": {
+                    "integer_value": 2812
+                },
+                "dd87a9d5-3f6d-466a-8610-700eeab86723": {
+                    "integer_value": 48
+                },
+                "fa4b8402-9fb7-4781-ba01-1d1fa8672a7e": {
+                    "duration_value": "0s"
+                },
+                "692a242b-c04d-4371-a24d-6970fb5e3dc4": {},
+                "95aff156-6017-4bc2-ad00-cca79d157e4c": {
+                    "integer_value": 105
+                },
+                "5d42f489-04ea-47c5-81d2-33e1f364e6e7": {
+                    "duration_value": "25490s"
+                },
+                "2b409c6b-8537-4476-8324-bf7f57820081": {},
+                "9110ed1d-c329-4cbf-8bd0-3929f9c1c3fc": {},
+                "c807f00b-08ff-47f6-9375-c697d441d39e": {
+                    "integer_value": 4748
+                },
+                "729a13af-2cc0-4b3a-a92d-8a7b2264c312": {
+                    "integer_value": 60
+                },
+                "fc0cfb89-14b4-4a47-bd60-34a18d3dbf67": {
+                    "duration_value": "0s"
+                },
+                "2ff35a56-808a-4f22-ac52-e43d64ea670a": {},
+                "99d23ea3-fd71-4911-85b7-986f603269d3": {
+                    "integer_value": 117
+                },
+                "b4c623ce-546b-4e4a-ab90-900958ab8049": {
+                    "duration_value": "17628s"
+                },
+                "a067d77a-d60b-4622-92ee-926b6c22a041": {},
+                "f7224f50-d1c6-433f-889e-d9f887b16deb": {},
+                "5b822e77-0f6a-4961-a2bb-b1e6f18bcd0d": {
+                    "integer_value": 5252
+                },
+                "85d1d873-c96f-4fa4-9b8e-205a92c5ce13": {
+                    "integer_value": 60
+                },
+                "8b3f698a-26ab-4cee-bffa-630854d0b3b9": {
+                    "duration_value": "0s"
+                },
+                "bb665a0e-7d23-41b0-bcba-914ea44d23b4": {},
+                "0498dcf7-bde1-41e4-9f9b-1340480ba340": {
+                    "integer_value": 106
+                },
+                "9b52e13a-1459-4ae6-97e0-684b4de2178e": {
+                    "duration_value": "5630s"
+                },
+                "8aafaaf2-de7a-4062-84ca-cae4db3d2d22": {},
+                "182b7b3e-ccf7-4c5a-abc1-59756986c064": {},
+                "faaebf42-be71-48ee-b8ce-637c38ae4fcd": {
+                    "integer_value": 104
+                },
+                "46fa1e55-3456-42bb-9032-51ad8636893c": {},
+                "fa82f3d3-fe31-4ad3-a228-243145727149": {
+                    "duration_value": "0s"
+                },
+                "fe42d043-3785-49f3-a7d1-1664a5b375d2": {},
+                "94db52fc-ac39-4f96-bd65-c3a7f91cc794": {
+                    "integer_value": 4
+                },
+                "d3e118e8-9f34-4590-936e-c9151f6546c6": {
+                    "duration_value": "0s"
+                },
+                "22358f44-5ad4-4495-b6a8-631854264a17": {},
+                "6faf8a41-82a4-49a0-b30f-1c436257da31": {},
+                "0d23475a-1b51-444a-ae46-215480654001": {
+                    "integer_value": 236
+                },
+                "ca074eb3-d50e-4c4d-b48c-f165b80aa0d9": {},
+                "2ba3ebb3-bb34-4a2f-9203-e0e60998a234": {
+                    "duration_value": "0s"
+                },
+                "6f180748-bf11-4f6d-860d-d5cac00b709e": {
+                    "integer_value": 3
+                },
+                "e33112f5-774f-492d-8108-5ab864bd060d": {
+                    "duration_value": "0s"
+                },
+                "9334dfc4-4122-48e5-ba7f-2a45f93925a3": {},
+                "80c9c3a3-ebe5-4864-99d4-e542d589267c": {},
+                "ac972f08-2bd8-4b73-9c8c-cbfe6b4073a7": {
+                    "integer_value": 485
+                },
+                "3eeee465-bacc-4d4d-a6e8-49c885b44537": {
+                    "integer_value": 12
+                },
+                "01512575-7d57-4524-aa5a-1c334cd2577b": {
+                    "duration_value": "0s"
+                },
+                "4cd0e7cc-3600-4343-a226-f7c473f53467": {
+                    "integer_value": 3
+                },
+                "005a2fde-8668-4fc7-9a02-98f3f57590c6": {
+                    "duration_value": "3698s"
+                },
+                "c19f63ae-5f22-4eb6-95a5-a3fa4eb2d0b8": {
+                    "integer_value": 3
+                },
+                "146b6567-b0e7-4acc-b990-58ac8175740d": {
+                    "integer_value": 219
+                },
+                "8e5cf358-6a16-43bd-95c9-ed07999935de": {
+                    "integer_value": 72
+                },
+                "ed1e84b1-efb3-4104-8e76-a43d1066f538": {
+                    "duration_value": "0s"
+                },
+                "c9ab8c89-79d8-43ea-ab3b-97f99da36e0a": {
+                    "integer_value": 36
+                },
+                "c610398f-3640-40cc-9e2a-30f53160aeee": {
+                    "boolean_value": true
+                },
+                "6fc1cfac-32dd-43f6-aa97-cc1d9727d5bd": {
+                    "integer_value": 10544
+                },
+                "1a0089e9-a4eb-4b7f-a03c-c964ebfe657d": {
+                    "duration_value": "11206s"
+                },
+                "a036d875-464b-4ec8-a169-224ef517c921": {
+                    "integer_value": 1
+                }
+            }
+        }
+    ],
+    "metadata": {
+        "timezone": {
+            "location": "Asia/Dubai",
+            "offset": 240
+        },
+        "device_type": "IBEX"
+    }
+}
